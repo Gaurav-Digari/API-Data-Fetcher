@@ -1,82 +1,79 @@
 # GitHub User Information Fetcher
 
-A beginner-friendly Python project that uses the **Requests module** and **GitHub REST API** to fetch and display information about a GitHub user.
+A simple Python project that uses the **Requests module** and **GitHub REST API** to fetch and display basic information about a GitHub user.
 
-## 📌 About
+## About
 
-This project demonstrates how Python can communicate with a web API using HTTP requests.
+This program asks the user to enter a GitHub username, sends a request to the GitHub API, receives the user's information, and displays selected details in the terminal.
 
-The user enters a GitHub username, and the program sends a `GET` request to the GitHub API and displays selected information from the response.
+## Features
 
-## ✨ Features
+- Takes a GitHub username as input
+- Creates a GitHub API URL dynamically
+- Sends an HTTP GET request
+- Checks whether the requested username exists
+- Processes the API response as JSON
+- Displays:
+  - Username
+  - Name
+  - Public repositories
+  - Followers
+  - Following
+  - Profile URL
 
-- Accepts a GitHub username as input
-- Sends an HTTP `GET` request
-- Uses the GitHub REST API
-- Handles JSON responses
-- Checks HTTP status codes
-- Displays user information
-- Handles invalid usernames and request errors
-- Uses a request timeout
+## Technologies Used
 
-## 🛠️ Technologies Used
+- Python 3
+- Requests module
+- GitHub REST API
 
-- **Python 3**
-- **Requests**
-- **GitHub REST API**
-
-## 📂 Project Structure
+## How It Works
 
 ```text
-GitHub-User-Information-Fetcher/
-│
-├── github_user.py
-└── README.md
+User enters GitHub username
+          ↓
+Create GitHub API URL
+          ↓
+Send GET request
+          ↓
+Receive API response
+          ↓
+Check response status
+          ↓
+Convert response to JSON
+          ↓
+Extract user information
+          ↓
+Display information
 ```
 
-## ⚙️ Installation
+## Installation
 
-Clone the repository:
-
-```bash
-git clone <repository-url>
-cd GitHub-User-Information-Fetcher
-```
-
-Install the required module:
+Install the Requests module:
 
 ```bash
 pip install requests
 ```
 
-## ▶️ Usage
+## Usage
 
 Run the program:
 
 ```bash
-python github_user.py
+python fetch.py
 ```
 
 Enter a GitHub username when prompted:
 
 ```text
-Enter GitHub username: torvalds
+Enter Your Git-Hub Username : torvalds
 ```
 
-The program fetches and displays information such as:
+The program will display the available information for that GitHub user.
 
-```text
-Username
-Name
-Public Repositories
-Followers
-Following
-Profile URL
-```
+## API Used
 
-## 🔗 API
-
-This project uses the GitHub REST API user endpoint:
+This project uses the GitHub REST API:
 
 ```text
 https://api.github.com/users/<username>
@@ -84,23 +81,21 @@ https://api.github.com/users/<username>
 
 No API key is required for this basic project.
 
-## 📚 Concepts Practiced
+## Concepts Practiced
 
 - Python `requests` module
-- HTTP `GET` requests
+- HTTP GET requests
 - REST APIs
-- JSON data
+- JSON responses
 - HTTP status codes
-- Exception handling
-- Request timeouts
-- Working with dictionaries
+- User input
+- Working with API response data
+- Dictionary data access
 
-## 🎯 Purpose
+## Purpose
 
-This project was created to gain practical experience with the **Python Requests module and API communication**.
+This project was created to practice using Python's **Requests module** and understand how a Python program can communicate with a real-world API and process the returned data.
 
-It is part of my journey of learning Python and building practical automation and cybersecurity-related skills.
-
-## 👤 Author
+## Author
 
 **Gaurav Digari**
